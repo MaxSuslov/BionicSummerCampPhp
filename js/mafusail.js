@@ -12,7 +12,6 @@ $(document).ready(function(){
             if(!flag){
                 $("#logo").css({
                     "margin-top": "-20px",
-                    "left": "60px",
                     "width": "195px",
                 });
 
@@ -28,7 +27,6 @@ $(document).ready(function(){
             if(flag){
                 $("#logo").css({
                     "margin-top": "0px",
-                    "left": "100px",
                     "width": "250px",
                 });
 
