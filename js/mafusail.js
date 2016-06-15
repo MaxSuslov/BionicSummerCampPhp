@@ -47,7 +47,7 @@ $(document).ready(function(){
     $('#logo1').click(function () {
         $('#menu ul').slideToggle(500);
     });
-    $('#menu ul').click(function () {
+    $('#menu li').click(function () {
         $('#menu ul').slideToggle(500);
     });
 
