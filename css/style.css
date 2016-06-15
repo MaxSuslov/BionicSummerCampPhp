@@ -1166,32 +1166,32 @@ img#logo2{
 }
 
 .formkonv{
-    width: 528px;
-    height: 670px;
-    margin: 5% 0 5% 10%;
+    width: 740px;
+    height: 938px;
+    margin: 5% 0 2% 10%;
     display: block;
     background: url("../img/konv.png") no-repeat;
     background-size: contain;
 }
 
 .formkonv_text{
-    padding: 40px 60px;
+    padding: 100px;
 }
 .formkonv_text h4{
-    font-size: 20px;
+    font-size: 40px;
     color: #11504b;
     text-align: center;
     margin-bottom: 10px;
 }
 
 .formkonv_text p {
-    font-size: 15px;
+    font-size: 25px;
     color: #11504b;
 }
 
 legend{
     margin: 10px auto;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     color: #11504b;
 }
@@ -1199,8 +1199,8 @@ legend{
 .ho4u{
 
     width: 60%;
-    margin: 0 auto;
-    font-size: 15px;
+    margin: 10% auto;
+    font-size: 20px;
     color: #11504b;
 }
 
@@ -1213,20 +1213,25 @@ legend{
 .contacts{
     color: #ffffff;
     position: absolute;
-    right: 20%;
-    bottom: 25%;
+    right: 10%;
+    bottom: 3%;
 }
 
 .contacts h2{
     margin: 20px 0;
+    font-size: 35px;
 }
 
-
+.contacts p,
+.developers p {
+    font-size: 22px;
+}
 
 .contacts a{
     color: #ffffff;
-    padding: 0 20px;
+    /*padding: 0 20px;*/
     text-decoration: none;
+    cursor: pointer;
 }
 
 .developers{
@@ -1235,18 +1240,18 @@ legend{
 }
 
 .developers img{
-    margin: 10px 0;
     width: 150px;
 }
 
 
 .form_contact_dannie input{
-    width: 100%;
+    width: 60%;
     border: none;
     background: #fbfcec;
     border-bottom: 1px solid grey;
     font-size: 20px;
 }
+
 
 .soth_sets{
     width: 25px;
@@ -1257,9 +1262,9 @@ legend{
 /*Кнопки*/
 
 #knopka_otpravka{
-    margin: 30px auto;
+    margin: 15% auto;
     width: 100%;
-    font-size: 15px;
+    font-size: 30px;
     font-weight: bold;
     padding: 10px;
     border-radius: 50px ;
@@ -1291,20 +1296,86 @@ label.error{
     text-align: center;
 }
 
-
-
-
-
 @media screen and (max-width: 1500px) {
-    .formkonv{
-        width: 350px;
-        height: 470px;
-        margin: 5% 0 5% 10%;
-        background-size: contain;
+    #formbackgr {
+        position: relative;
+        width: 100%;
+        display: inline-block;
+        text-align: center;
     }
+    .formkonv {
+        position: static;
+        margin: 7% auto 2%;
+    }
+    .contacts {
+        position: static;
+    }
+}
 
+@media screen and (max-width: 830px) {
+.formkonv{
+width: 555px;
+height: 703px;
+margin: 5% auto;
+background-size: contain;
+}
+
+.formkonv_text{
+padding: 15% 5%;
+}
+.formkonv_text h4{
+font-size: 25px;
+color: #11504b;
+text-align: center;
+margin-bottom: 5px;
+}
+
+.formkonv_text p {
+font-size: 15px;
+color: #11504b;
+}
+
+legend{
+margin: 10px auto;
+font-size: 20px;
+font-weight: bold;
+color: #11504b;
+}
+
+.ho4u{
+width: 70%;
+margin: 0 auto;
+font-size: 13px;
+color: #11504b;
+}
+
+.ho4u input{
+margin: 3px auto;
+}
+
+.form_contact_dannie input{
+width: 60%;
+border: none;
+background: #fbfcec;
+border-bottom: 1px solid grey;
+font-size: 12px;
+}
+
+#knopka_otpravka{
+width: 80%;
+font-size: 25px;
+}
+}
+
+@media screen and (max-width: 650px) {
+    .formkonv {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 500px) {
     .formkonv_text{
-        padding: 30px 40px;
+        padding: 30px;
     }
     .formkonv_text h4{
         font-size: 20px;
@@ -1314,13 +1385,13 @@ label.error{
     }
 
     .formkonv_text p {
-        font-size: 12px;
+        font-size: 13px;
         color: #11504b;
     }
 
     legend{
-        margin: 10px auto;
-        font-size: 20px;
+        margin: 8px auto;
+        font-size: 16px;
         font-weight: bold;
         color: #11504b;
     }
@@ -1328,61 +1399,75 @@ label.error{
     .ho4u{
         width: 70%;
         margin: 0 auto;
-        font-size: 12px;
+        font-size: 11px;
         color: #11504b;
     }
 
     .ho4u input{
-        margin: 3px auto;
+        margin: 2px auto;
     }
 
     .form_contact_dannie input{
-        width: 100%;
+        width: 50%;
         border: none;
         background: #fbfcec;
         border-bottom: 1px solid grey;
         font-size: 12px;
     }
 
+    #knopka_otpravka{
+        width: 70%;
+        font-size: 18px;
+        margin: 5%;
+    }
+}
 
-
-
-
-    .contacts{
-        color: #ffffff;
-        position: absolute;
-        right: 5%;
-        bottom: 25%;
+@media screen and (max-width: 460px) {
+    .contacts a {
+        display: inline-block;
+    }
+    .contacts {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
     }
 
     .contacts h2{
-        margin: 20px 0;
-    }
-    .contacts a{
-        color: #ffffff;
-        padding: 0 20px;
-        text-decoration: none;
+        margin: 15px 0 5px;
+        font-size: 23px;
     }
 
-    .developers{
-        margin: 20px 0;
-        color: black;
-    }
-
-    .developers img{
-        margin: 10px 0;
-        width: 150px;
-    }
-    .soth_sets{
-        width: 25px;
+    .contacts p,
+    .developers p {
+        font-size: 15px;
     }
 }
 
-
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 400px) {
+    .formkonv {
+        margin: 7% auto;
+        height: 400px;
+    }
+    /*#knopka_otpravka{*/
+        /*!*margin: 35px auto;*!*/
+        /*width: 65%;*/
+    /*}*/
 
 }
 
+@media screen and (max-width: 350px) {
+    .formkonv_text p {
+        font-size: 12px;
+    }
+
+    .ho4u {
+        width: 100%;
+    }
+    #knopka_otpravka{
+        margin: 5px auto;
+        width: 63%;
+    }
+}
 
 
 
