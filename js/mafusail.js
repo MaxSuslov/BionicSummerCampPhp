@@ -47,6 +47,9 @@ $(document).ready(function(){
     $('#logo1').click(function () {
         $('#menu ul').slideToggle(500);
     });
+    $('#menu ul').click(function () {
+        $('#menu ul').slideToggle(500);
+    });
 
     /*validate form*/
 
@@ -58,12 +61,12 @@ $(document).ready(function(){
                 required: true,
             },
 
-            mail: {
+            email: {
                 email: true,
                 required: true,
             },
 
-            telephon: {
+            phone: {
                 digits: true,
                 minlength: 10,
                 maxlength: 10,
@@ -76,12 +79,12 @@ $(document).ready(function(){
                 required: "<br> Поле 'Имя' <br>обязательно для заполнения",
             },
 
-            mail: {
+            email: {
                 email: "<br>В e-mail адресе должен <br> присудстовать символ '@'! <br> Примере: UNIVERSITY@BIONIC-UNIVERSITY.COM",
                 required: "Поле для e-mail обязательно <br> для заполнения",
             },
 
-            telephon: {
+            phone: {
                 required: "Поле 'Номер телефону' <br>обязательно для заполнения",
                 digits: "Это поле содержит только цифры <br> Пример:  0443613450",
                 minlength: "Номер телефону должен быть не менее <br> 10 символов",
