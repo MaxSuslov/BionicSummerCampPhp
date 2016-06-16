@@ -1198,7 +1198,7 @@ legend{
 
 .ho4u{
 
-    width: 60%;
+    width: 100%;
     margin: 10% auto;
     font-size: 20px;
     color: #11504b;
@@ -1214,7 +1214,7 @@ legend{
     color: #ffffff;
     position: absolute;
     right: 10%;
-    bottom: 3%;
+    bottom: 10%;
 }
 
 .contacts h2{
@@ -1296,57 +1296,106 @@ label.error{
     text-align: center;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1600px) {
     #formbackgr {
         position: relative;
         width: 100%;
         display: inline-block;
-        text-align: center;
     }
     .formkonv {
         position: static;
-        margin: 7% auto 2%;
+        margin: 7%;
+        display: inline-block;
+        width: 40%;
+        height: auto;
+    }
+    .formkonv_text{
+        padding: 100px 50px 110px 60px;
+    }
+    .formkonv_text h4, .ho4u legend {
+        font-size: 1.8rem;
+    }
+    .formkonv_text p {
+        font-size: 20px;
+    }
+
+    .form_contact_dannie,
+    .ho4u {
+        text-align: left;
+    }
+    .form_contact_dannie input{
+        width: 50%;
+        font-size: 18px;
     }
     .contacts {
-        position: static;
+        display: inline-block;
+        bottom: 15%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .ho4u,
+    .formkonv_text p,
+    .contacts p,
+    .developers p {
+        font-size: 1rem;
+    }
+    .formkonv_text h4,
+    .ho4u legend,
+    .contacts h2,
+    #knopka_otpravka {
+        font-size: 1.5rem;
+    }
+    .formkonv_text {
+        padding-top: 5%;
+    }
+    .formkonv {
+        margin: 7%;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .formkonv_text{
+        padding: 7% 10%;
+    }
+
+    .ho4u,
+    .formkonv_text p,
+    .contacts p,
+    .developers p {
+        font-size: .8rem;
+    }
+
+    .formkonv_text h4,
+    .ho4u legend,
+    .contacts h2,
+    #knopka_otpravka {
+        font-size: 1rem;
+    }
+
+    .ho4u input{
+        margin: 3px auto;
     }
 }
 
 @media screen and (max-width: 830px) {
 .formkonv{
-width: 555px;
-height: 703px;
-margin: 5% auto;
-background-size: contain;
+    width: 50%;
 }
-
-.formkonv_text{
-padding: 15% 5%;
-}
-.formkonv_text h4{
-font-size: 25px;
-color: #11504b;
-text-align: center;
-margin-bottom: 5px;
-}
-
-.formkonv_text p {
-font-size: 15px;
-color: #11504b;
+.formkonv_text {
+    padding: 10% 25% 15% 10%;
 }
 
 legend{
 margin: 10px auto;
 font-size: 20px;
-font-weight: bold;
-color: #11504b;
 }
 
 .ho4u{
 width: 70%;
 margin: 0 auto;
 font-size: 13px;
-color: #11504b;
 }
 
 .ho4u input{
@@ -1354,7 +1403,130 @@ margin: 3px auto;
 }
 
 .form_contact_dannie input{
-width: 60%;
+width: 50%;
+}
+
+.contacts {
+    margin: 0;
+}
+
+.developers img {
+    width: 100px;
+}
+}
+
+@media screen and (max-width: 730px) {
+    .formkonv {
+        width: 40%;
+        margin-left: 10%
+    }
+
+    .formkonv_text {
+        /*padding: 10%;*/
+        line-height:.1rem;
+    }
+
+    legend {
+        margin: 10px auto;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .formkonv_text p,
+    .contacts p,
+    .ho4u {
+        font-size: 12px;
+    }
+
+    .ho4u {
+        width: 70%;
+        margin: 0 auto;
+
+        color: #11504b;
+    }
+
+    .ho4u input {
+        margin: 3px auto;
+    }
+
+    .form_contact_dannie input {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .ho4u,
+    .formkonv_text p,
+    .contacts p,
+    .developers p {
+        font-size: .5rem;
+    }
+    .formkonv_text h4,
+    .ho4u legend,
+    .contacts h2,
+    #knopka_otpravka {
+        font-size: .8rem;
+    }
+    .ho4u input{
+        margin: 2px auto;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+.formkonv,
+.contacts {
+    position: static;
+    display: block;
+}
+
+.formkonv {
+    width: 60%;
+    height: 400px;
+    margin: 10% auto;
+}
+
+.contacts {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.formkonv_text{
+padding: 28px;
+line-height: 1rem;
+}
+.formkonv_text h4{
+font-size: 20px;
+color: #11504b;
+text-align: center;
+margin-bottom: 5px;
+}
+
+.formkonv_text p {
+font-size: 13px;
+color: #11504b;
+}
+
+legend{
+margin: 8px auto;
+font-size: 16px;
+font-weight: bold;
+color: #11504b;
+}
+
+.ho4u{
+width: 70%;
+margin: 0 auto;
+font-size: 11px;
+color: #11504b;
+}
+
+.ho4u input{
+margin: 2px auto;
+}
+
+.form_contact_dannie input{
+width: 50%;
 border: none;
 background: #fbfcec;
 border-bottom: 1px solid grey;
@@ -1362,97 +1534,45 @@ font-size: 12px;
 }
 
 #knopka_otpravka{
-width: 80%;
-font-size: 25px;
-}
-}
-
-@media screen and (max-width: 650px) {
-    .formkonv {
-        width: 85%;
-    }
+font-size: 18px;
+margin: 5%;
 }
 
-@media screen and (max-width: 500px) {
-    .formkonv_text{
-        padding: 30px;
-    }
-    .formkonv_text h4{
-        font-size: 20px;
-        color: #11504b;
-        text-align: center;
-        margin-bottom: 5px;
-    }
-
-    .formkonv_text p {
-        font-size: 13px;
-        color: #11504b;
-    }
-
-    legend{
-        margin: 8px auto;
-        font-size: 16px;
-        font-weight: bold;
-        color: #11504b;
-    }
-
-    .ho4u{
-        width: 70%;
-        margin: 0 auto;
-        font-size: 11px;
-        color: #11504b;
-    }
-
-    .ho4u input{
-        margin: 2px auto;
-    }
-
-    .form_contact_dannie input{
-        width: 50%;
-        border: none;
-        background: #fbfcec;
-        border-bottom: 1px solid grey;
-        font-size: 12px;
-    }
-
-    #knopka_otpravka{
-        width: 70%;
-        font-size: 18px;
-        margin: 5%;
-    }
+.ho4u,
+.formkonv_text p,
+.contacts p,
+.developers p {
+    font-size: 11px;
+}
+.formkonv_text h4,
+.ho4u legend,
+.contacts h2, {
+    font-size: 20px;
+}
 }
 
 @media screen and (max-width: 460px) {
-    .contacts a {
-        display: inline-block;
-    }
-    .contacts {
-        width: 100%;
-        display: inline-block;
-        text-align: center;
-    }
-
-    .contacts h2{
-        margin: 15px 0 5px;
-        font-size: 23px;
-    }
-
-    .contacts p,
-    .developers p {
-        font-size: 15px;
-    }
+.contacts a {
+display: inline-block;
 }
 
-@media screen and (max-width: 400px) {
-    .formkonv {
-        margin: 7% auto;
-        height: 400px;
-    }
-    /*#knopka_otpravka{*/
-        /*!*margin: 35px auto;*!*/
-        /*width: 65%;*/
-    /*}*/
 
+.contacts h2{
+margin: 15px 0 5px;
+font-size: 23px;
+}
+
+.contacts p,
+.developers p {
+font-size: 15px;
+}
+}
+
+@media screen and (max-width: 401px) {
+.formkonv {
+margin: 7% auto;
+width: 80%;
+}
 }
 
 @media screen and (max-width: 350px) {
@@ -1464,7 +1584,7 @@ font-size: 25px;
         width: 100%;
     }
     #knopka_otpravka{
-        margin: 5px auto;
+        margin: 2% 20%;
         width: 63%;
     }
 }
