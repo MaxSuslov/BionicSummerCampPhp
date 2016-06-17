@@ -43,13 +43,24 @@ $(document).ready(function(){
 
     // выплывающие меню
 
-
     $('#logo1').click(function () {
         $('#menu ul').slideToggle(500);
     });
+
+
     $('#menu li').click(function () {
-        $('#menu ul').slideToggle(500);
+        if ($(window).width() <= 860) {
+            $('#menu ul').slideUp(500);
+        }
     });
+
+    $(window).resize(function () {
+        if ($(window).width() > 860){
+            $('#menu ul').show(500);
+        } else {$('#menu ul').hide();}
+    });
+
+
 
     /*validate form*/
 
